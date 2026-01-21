@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 背景层：圆角矩形，使用成汇品牌深蓝 -->
+    <path
+        android:fillColor="#1E40AF"
+        android:pathData="M20,10 L88,10 A10,10 0,0 1 98,20 L98,88 A10,10 0,0 1 88,98 L20,98 A10,10 0,0 1 10,88 L10,20 A10,10 0,0 1 20,10 Z" />
+    
+    <!-- 装饰层：浅蓝色半透明折线，代表建筑轮廓与数据化 -->
+    <path
+        android:fillColor="#3B82F6"
+        android:fillAlpha="0.4"
+        android:pathData="M10,70 L30,50 L50,80 L75,40 L98,60 L98,98 L10,98 Z" />
+
+    <!-- 核心层：白色安全盾牌 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,25C46,25 35,29 32,31L32,55C32,71 54,83 54,83C54,83 76,71 76,55L76,31C73,29 62,25 54,25Z" />
+    
+    <!-- 盾牌内的勾选标志（成汇蓝） -->
+    <path
+        android:strokeColor="#1E40AF"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M44,54 L52,62 L64,48" />
+</vector>

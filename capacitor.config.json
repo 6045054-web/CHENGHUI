@@ -1,0 +1,14 @@
+
+{
+  "appId": "com.chenghui.office.platform",
+  "appName": "成汇数字平台",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true,
+    "allowNavigation": [
+      "mycbjreiocjdggpwiwhq.supabase.co"
+    ]
+  }
+}

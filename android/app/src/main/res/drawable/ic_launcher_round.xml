@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 背景层：纯圆背景 -->
+    <path
+        android:fillColor="#1E40AF"
+        android:pathData="M54,54m-54,0a54,54 0,1 1,108 0a54,54 0,1 1,-108 0" />
+    
+    <!-- 装饰：极简数字化线条 -->
+    <path
+        android:fillColor="#3B82F6"
+        android:fillAlpha="0.3"
+        android:pathData="M0,80 L40,60 L60,90 L108,50 L108,108 L0,108 Z" />
+
+    <!-- 白色安全盾牌 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,24C44,24 32,28 28,30L28,56C28,74 54,88 54,88C54,88 80,74 80,56L80,30C76,28 64,24 54,24Z" />
+    
+    <!-- 核心确认标志 -->
+    <path
+        android:strokeColor="#1E40AF"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M44,55 L52,63 L64,49" />
+</vector>

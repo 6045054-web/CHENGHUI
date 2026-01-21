@@ -1,0 +1,26 @@
+// 显式指定 settings 文件的根目录
+rootProject.name = 'ChenghuiOfficeAndroid'
+
+include ':app'
+// 核心修复：将项目模块完全锁定在当前 android/app 目录下
+project(':app').projectDir = new File(settingsDir, 'app')
+
+// 针对 GitHub Actions 环境的路径探测
+def capacitorAndroidDir = new File(settingsDir, '../node_modules/@capacitor/android/capacitor')
+
+if (!capacitorAndroidDir.exists()) {
+    capacitorAndroidDir = new File(rootDir, '../node_modules/@capacitor/android/capacitor')
+}
+
+if (capacitorAndroidDir.exists()) {
+    include ':capacitor-android'
+    project(':capacitor-android').projectDir = capacitorAndroidDir
+} else {
+    println "CRITICAL: Capacitor Android core library not found!"
+}
+
+def pluginsFolder = new File(settingsDir, 'capacitor-cordova-android-plugins')
+if (pluginsFolder.exists()) {
+    include ':capacitor-cordova-android-plugins'
+    project(':capacitor-cordova-android-plugins').projectDir = pluginsFolder
+}

@@ -1,0 +1,15 @@
+
+// Capacitor 插件自动构建配置
+// 该文件由系统自动维护，手动添加以确保离线构建或路径异常时仍能尝试编译
+dependencies {
+    implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
+    implementation "androidx.coordinatorlayout:coordinatorlayout:$androidxCoordinatorLayoutVersion"
+    implementation "androidx.core:core-ktx:$androidxCoreVersion"
+    implementation "androidx.activity:activity-ktx:$androidxActivityVersion"
+    implementation "androidx.fragment:fragment-ktx:$androidxFragmentVersion"
+}
+
+// 模拟自动加载插件的逻辑（如果 node_modules 路径正确，这会被主构建逻辑覆盖）
+if (file('../node_modules/@capacitor/android/capacitor.build.gradle').exists()) {
+    apply from: '../node_modules/@capacitor/android/capacitor.build.gradle'
+}

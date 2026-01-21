@@ -1,0 +1,8 @@
+{
+  "name": "成汇监理原生版",
+  "description": "基于 Jetpack Compose 构建的原生办公平台",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
